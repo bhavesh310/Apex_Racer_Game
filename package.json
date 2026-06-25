@@ -1,0 +1,14 @@
+{
+  "name": "apex-racer-x",
+  "version": "2.0.0",
+  "description": "APEX RACER X — F1 Hill Climb Racing Game with LLM AI, WebRTC multiplayer, FSM rivals",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "vitest": "^1.6.0"
+  }
+}
