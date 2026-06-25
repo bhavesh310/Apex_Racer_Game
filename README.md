@@ -2,9 +2,9 @@
 
 <div align="center">
 
-### A High-Performance Formula Racing Simulation Featuring Dynamic Weather, Procedural Track Generation, and Real-Time Physics
+### A High-Performance Formula Racing Simulation Featuring Dynamic Weather, Real-Time Physics, and Procedural Hill-Climb Track Generation
 
-Built with modern web technologies to demonstrate advanced game development concepts including procedural generation, physics simulation, particle systems, state management, and performance optimization.
+Built to demonstrate advanced frontend engineering concepts including game-loop architecture, physics simulation, procedural generation, event-driven systems, performance optimization, and browser-based game development.
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-Canvas-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
@@ -16,94 +16,87 @@ Built with modern web technologies to demonstrate advanced game development conc
 
 ---
 
-## 🚀 Project Overview
+## 🚀 Overview
 
-Apex Racer is a browser-based Formula-style racing game engineered to showcase real-world software engineering concepts through an interactive gaming experience.
+Apex Racer is a browser-based Formula-style racing simulation designed to showcase real-world software engineering principles through an interactive gaming experience.
 
-The project combines procedural terrain generation, dynamic weather simulation, real-time vehicle physics, and advanced rendering techniques to create an engaging racing environment where gameplay conditions evolve continuously.
+The project combines dynamic weather systems, real-time vehicle physics, procedural track generation, AI-driven race communication, and immersive visual effects to create a continuously evolving racing environment.
 
-Unlike traditional racing games with static tracks and predictable environments, Apex Racer introduces adaptive racing conditions through a six-stage weather engine that directly influences vehicle handling, traction, visibility, and race strategy.
+Unlike traditional racing games with fixed tracks and static conditions, Apex Racer introduces adaptive gameplay where weather conditions directly influence vehicle grip, visibility, handling characteristics, and racing strategy.
+
+The project serves as a demonstration of advanced JavaScript engineering, system design, and browser performance optimization.
 
 ---
 
-## ✨ Key Engineering Highlights
+## ✨ Core Features
 
-### Procedural Track Generation
+### 🏎️ Formula-Inspired Racing Vehicle
 
-* Infinite hill-climb track generation
-* Runtime terrain synthesis
-* Dynamic elevation modeling
-* Smooth spline-based road creation
-* Difficulty scaling algorithms
-* Deterministic segment generation
+The player controls a fully detailed Formula-style race car featuring:
 
-### Real-Time Physics Engine
+* Aerodynamic bodywork
+* Rear wing with endplates
+* Functional sidepods
+* HALO safety structure
+* High-performance racing tyres
+* Brake glow visualization
+* Exhaust glow effects
+* Detailed driver cockpit
+* Steering wheel animations
+* Dynamic vehicle movement
 
-* Vehicle acceleration simulation
-* Surface traction calculations
-* Momentum preservation system
-* Hill-climb force calculations
-* Dynamic grip management
-* Weather-dependent handling behavior
+### 👨‍✈️ Driver Rendering System
 
-### Dynamic Weather Engine
+* Racing helmet with visor effects
+* Helmet stripe detailing
+* Driver hand animations
+* Steering synchronization
+* Dynamic cockpit visuals
 
-Six fully simulated weather states:
+---
+
+## ⛰️ Procedural Hill-Climb Racing
+
+Tracks are generated dynamically during gameplay and feature:
+
+* Infinite road generation
+* Dynamic elevation changes
+* Hills and valleys
+* Sharp climbs and descents
+* Smooth terrain interpolation
+* Difficulty scaling
+* Procedural track segments
+* Roadside kerbs
+* Center lane markings
+* Tyre mark rendering
+
+Every race presents a unique challenge.
+
+---
+
+## 🌦️ Dynamic Weather Simulation
+
+Apex Racer features a six-stage weather engine that evolves during gameplay.
+
+### Weather States
 
 ```text
 Sunny → Cloudy → Drizzle → Rain → Heavy Rain → Storm
 ```
 
-Each weather condition dynamically affects:
+### Weather Effects
 
-* Vehicle grip coefficients
-* Surface friction values
-* Visibility levels
-* Particle rendering intensity
+Each weather state dynamically impacts:
+
+* Surface grip
+* Vehicle traction
+* Visibility
+* Particle intensity
 * Environmental lighting
-* Driver strategy requirements
+* Driving difficulty
+* Road appearance
 
-### Advanced Rendering Systems
-
-* HTML5 Canvas rendering pipeline
-* Real-time particle systems
-* Dynamic cloud layers
-* Rain simulation
-* Fog rendering
-* Lightning effects
-* Wet surface reflections
-* Brake temperature visualization
-* Exhaust particle effects
-
----
-
-## 🏎️ Formula-Inspired Vehicle System
-
-The player vehicle is designed using modern Formula racing principles.
-
-### Vehicle Features
-
-* Aerodynamic bodywork
-* Rear wing with endplates
-* Functional sidepod design
-* HALO safety structure
-* Performance racing tyres
-* Brake heat visualization
-* Driver cockpit rendering
-* Steering wheel animation
-* Exhaust glow system
-
-### Driver Model
-
-* Racing helmet
-* Reflective visor effects
-* Animated steering input
-* Driver hand positioning
-* Dynamic visual feedback
-
----
-
-## 🌦️ Adaptive Weather Physics
+### Grip System
 
 | Weather State | Grip Multiplier |
 | ------------- | --------------- |
@@ -114,13 +107,13 @@ The player vehicle is designed using modern Formula racing principles.
 | Heavy Rain    | 0.55            |
 | Storm         | 0.45            |
 
-Weather transitions occur automatically during gameplay and immediately impact racing dynamics.
+Weather transitions occur automatically during gameplay and immediately influence vehicle handling.
 
 ---
 
-## 🎙️ Crew Chief Communication System
+## 🎙️ AI Crew Chief System
 
-An event-driven radio system provides contextual race updates.
+A dynamic crew chief provides contextual race updates throughout gameplay.
 
 Examples:
 
@@ -134,24 +127,73 @@ Storm conditions active. Exercise caution.
 Visibility reduced. Adapt braking zones.
 ```
 
+The system reacts to weather changes and gameplay events in real time.
+
+---
+
+## 🔊 Audio Engine
+
+The custom audio system enhances immersion through:
+
+* Engine sound effects
+* Environmental audio cues
+* Dynamic weather notifications
+* Crew chief announcements
+* Event-based sound triggers
+
+---
+
+## ⚡ Real-Time Physics Engine
+
+The physics system is responsible for:
+
+* Vehicle acceleration
+* Speed calculations
+* Traction modeling
+* Surface grip simulation
+* Momentum preservation
+* Hill-climb interaction
+* Weather-dependent handling
+* Dynamic resistance calculations
+
+The physics engine adapts vehicle behavior according to environmental conditions and terrain changes.
+
+---
+
+## 🎨 Rendering Systems
+
+Visual systems implemented include:
+
+* HTML5 Canvas rendering
+* Rain particle simulation
+* Dynamic cloud layers
+* Fog effects
+* Storm lightning effects
+* Wet asphalt rendering
+* Brake heat visualization
+* Exhaust glow rendering
+* Environmental transitions
+
 ---
 
 ## 🛠️ Technical Skills Demonstrated
 
 This project showcases proficiency in:
 
-* Object-Oriented JavaScript
+* JavaScript (ES6+)
+* Object-Oriented Programming
 * Game Loop Architecture
 * State Management
-* Procedural Content Generation
-* Physics Simulation
 * Event-Driven Programming
+* Procedural Content Generation
+* Physics-Based Simulation
+* Dynamic Weather Modeling
+* Browser Game Development
+* HTML5 Canvas Rendering
 * Performance Optimization
-* Canvas API Rendering
-* Animation Systems
-* Mathematical Modeling
 * Software Architecture Design
 * Responsive UI Development
+* Unit Testing
 
 ---
 
@@ -161,35 +203,64 @@ This project showcases proficiency in:
 Apex_Racer/
 │
 ├── src/
-│   ├── core/
-│   │   ├── GameEngine.js
-│   │   ├── PhysicsEngine.js
-│   │   ├── WeatherEngine.js
-│   │   └── EventManager.js
-│   │
-│   ├── systems/
-│   │   ├── TrackGenerator.js
-│   │   ├── ParticleSystem.js
-│   │   ├── AudioSystem.js
-│   │   └── RenderingSystem.js
-│   │
-│   ├── entities/
-│   │   ├── Car.js
-│   │   ├── Driver.js
-│   │   └── Track.js
-│   │
-│   ├── ui/
-│   │   ├── HUD.js
-│   │   ├── Speedometer.js
-│   │   └── WeatherDisplay.js
-│   │
-│   └── main.js
+│   ├── AICrewChief.js
+│   ├── AudioEngine.js
+│   ├── LevelManager.js
+│   ├── Physics.js
+│   └── Weather.js
 │
 ├── tests/
+│   └── physics.test.js
+│
 ├── index.html
 ├── package.json
+├── HOW_TO_RUN.md
 └── README.md
 ```
+
+---
+
+## 🎯 Engineering Challenges Solved
+
+### Dynamic Weather Simulation
+
+Implemented a weather engine capable of modifying gameplay behavior through environmental state transitions, grip calculations, and visual effects.
+
+### Real-Time Physics Modeling
+
+Designed a lightweight physics system supporting acceleration, momentum, traction, and terrain interaction.
+
+### Procedural Track Generation
+
+Created dynamically generated hill-climb terrain that produces unique racing experiences without predefined maps.
+
+### Event-Driven AI Communication
+
+Developed a contextual crew-chief system that reacts intelligently to gameplay events and weather changes.
+
+### Performance-Oriented Rendering
+
+Optimized browser rendering and game-loop execution to maintain smooth gameplay while supporting multiple concurrent systems.
+
+---
+
+## ✅ Testing
+
+The project includes automated testing for validating gameplay calculations and physics behavior.
+
+Run tests using:
+
+```bash
+npm test
+```
+
+Current validation coverage includes:
+
+* Acceleration calculations
+* Grip coefficient verification
+* Weather impact calculations
+* Vehicle physics consistency
+* Terrain interaction checks
 
 ---
 
@@ -199,42 +270,77 @@ Apex_Racer/
 * Optimized Animation Pipeline
 * Efficient Memory Usage
 * Low-Latency Input Handling
-* Scalable Particle Systems
-* Browser Compatibility
+* Scalable Weather Systems
+* Smooth Canvas Rendering
+* Cross-Browser Compatibility
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Node.js 18+
+* npm
+
+### Installation
+
+```bash
+git clone https://github.com/bhavesh310/Apex_Racer_Game.git
+
+cd Apex_Racer_Game
+
+npm install
+```
+
+### Run Locally
+
+```bash
+npm start
+```
+
+### Run Tests
+
+```bash
+npm test
+```
 
 ---
 
 ## 🎯 Why This Project Matters
 
-Apex Racer was developed to explore advanced frontend engineering concepts beyond traditional CRUD applications.
+Apex Racer was built to explore engineering challenges beyond traditional CRUD applications.
 
 The project demonstrates the ability to:
 
 * Build complex interactive systems
-* Design scalable software architecture
+* Design modular software architecture
+* Implement mathematical simulations
 * Optimize rendering performance
-* Implement mathematical algorithms
-* Create immersive user experiences
-* Develop real-time simulation systems
+* Create event-driven applications
+* Develop real-time game systems
+* Manage state across multiple subsystems
 
-These are the same engineering principles commonly applied in modern product-based companies building interactive platforms, visualization tools, simulations, and high-performance web applications.
+These are the same foundational engineering principles used in high-performance web applications, visualization platforms, simulations, and interactive products developed by modern product-based companies.
 
 ---
 
 ## 👨‍💻 Author
 
-**Bhavesh Ghatode**
+### Bhavesh Ghatode
 
 Full Stack Developer | Frontend Engineer | Problem Solver
 
-GitHub: https://github.com/bhavesh310
+**GitHub**
+https://github.com/bhavesh310
 
-LinkedIn: https://www.linkedin.com/in/bhavesh-kumar-4466a3276/
+**LinkedIn**
+https://www.linkedin.com/in/bhavesh-kumar-4466a3276/
 
 ---
 
 <div align="center">
 
-### "Engineering immersive experiences through code, physics, and design."
+### Engineering immersive experiences through code, physics, and design.
 
 </div>
